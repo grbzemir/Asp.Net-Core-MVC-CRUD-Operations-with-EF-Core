@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<BrandContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("brandCs")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BrandCs")));
 
 var app = builder.Build();
 
